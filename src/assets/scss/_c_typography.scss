@@ -1,0 +1,211 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'kollektifbold';
+    src: url('../fonts/kollektif-bold-webfont.woff2') format('woff2'),
+        url('../fonts/kollektif-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'kollektifbold_italic';
+    src: url('../fonts/kollektif-bolditalic-webfont.woff2') format('woff2'),
+        url('../fonts/kollektif-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'kollektifitalic';
+    src: url('../fonts/kollektif-italic-webfont.woff2') format('woff2'),
+        url('../fonts/kollektif-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'kollektifregular';
+    src: url('../fonts/kollektif-webfont.woff2') format('woff2'),
+        url('../fonts/kollektif-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+        url('../fonts/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('../fonts/montserrat-light-webfont.woff2') format('woff2'),
+        url('../fonts/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratmedium';
+    src: url('../fonts/montserrat-medium-webfont.woff2') format('woff2'),
+        url('../fonts/montserrat-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a {
+    color: $lime;
+    border: 0;
+
+    &:hover {
+        text-transform: none;
+        color: $lime;
+    }
+}
+
+h1 {
+    font-family: 'kollektifregular';
+}
+
+h2 {
+    font-family: 'kollektifregular';
+}
+
+h2.dark {
+    font-family: 'kollektifbold';
+    font-size: 56px;
+    color: $white;
+    min-width: 100%;
+
+    @include media-breakpoint-down(xs) {
+        font-size: 36px;
+    }
+
+    span {
+        color: $lime;
+    }
+
+}
+
+h2.dark {
+    font-family: 'kollektifbold';
+    font-size: 56px;
+    color: $dark;
+    min-width: 100%;
+
+    @include media-breakpoint-down(xs) {
+        font-size: 36px;
+    }
+
+    span {
+        color: $lime;
+    }
+}
+
+h2.sub-title {
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-family: 'kollektifbold';
+}
+
+h4 {
+    font-family: 'montserratlight';
+}
+
+h5 {
+    font-family: 'kollektifregular';
+}
+
+p {
+    font-family: 'montserratlight';
+}
+
+p.max-width-center {
+    max-width: 600px;
+
+}
+
+body {
+    font-family: 'kollektifregular';
+}
+
+.bold {
+    font-family: 'kollektifbold';
+}
+
+.italic {
+    font-family: 'kollektifitalic';
+}
+
+.text-light-grey {
+    color: $light-grey;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+div,
+span,
+td,
+tr,
+table,
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+a {
+
+
+    &:hover {}
+}
+
+//buttons
+
+
+.btn-1 {
+    background: $lime;
+    color: $white;
+    transition: 0.3s ease-in-out;
+    border: 0;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: $white;
+        color: $lime;
+        text-decoration: none;
+    }
+}
+
+.btn-2 {
+    background: $lime;
+    color: $dark;
+    transition: 0.3s ease-in-out;
+    border: 0;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: $white;
+        color: $lime;
+        text-decoration: none;
+    }
+}

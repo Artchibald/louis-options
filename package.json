@@ -1,0 +1,36 @@
+{
+    "name": "adopt-me",
+    "version": "1.0.0",
+    "description": "An app to teach you to write React",
+    "dependencies": {
+        "autoprefixer": "^9.5.0",
+        "browsersync": "0.0.1-security",
+        "child_process": "^1.0.2",
+        "cssnano": "^4.1.10",
+        "del": "^4.1.0",
+        "gulp-eslint": "^5.0.0",
+        "gulp-kit": "^0.3.0",
+        "gulp-newer": "^1.4.0",
+        "gulp-plumber": "^1.2.1",
+        "gulp-postcss": "^8.0.0",
+        "gulp-rename": "^1.4.0",
+        "gulp-sass": "^4.0.2",
+        "plumber": "^0.4.8",
+        "webpack": "^4.29.6",
+        "webpack-stream": "^5.2.1"
+    },
+    "scripts": {
+        "build": "webpack --config prod.config.js"
+    },
+    "devDependencies": {
+        "bootstrap": "^4.3.1",
+        "browser-sync": "^2.26.5",
+        "gulp": "^4.0.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-imagemin": "^5.0.3",
+        "jquery": "^3.4.1",
+        "node-sass": "^4.12.0",
+        "optipng": "^2.0.0",
+        "popper.js": "^1.15.0"
+    }
+}

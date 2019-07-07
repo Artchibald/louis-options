@@ -1,0 +1,200 @@
+section.see-you {
+
+
+    a.btn-2 {
+        max-width: 160px;
+        display: block;
+        margin: 0 auto;
+
+        &:hover {
+            color: $lime;
+            background-color: $dark;
+        }
+    }
+
+
+}
+
+footer.footer {
+    position: relative;
+    overflow: hidden;
+
+    h4.dark.text-white {
+        letter-spacing: 2px;
+    }
+
+    .bg-text {
+        position: absolute;
+        top: -43vh;
+        left: -15vw;
+        right: 0;
+        bottom: 0;
+        font-size: 900px;
+        line-height: 650px;
+        text-align: center;
+        color: #5b5858;
+        text-shadow: 0 0 3px #4c4949, 0 0 5px #4c4949;
+        opacity: .3;
+        font-family: 'kollektifbold';
+        user-select: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+
+    .logo-container svg {
+        width: 100%;
+        height: 100px;
+        position: relative;
+        margin-top: 100px;
+    }
+
+    //social icons
+    .wrap {
+        width: 217px;
+        height: 47px;
+        float: left;
+        margin-right: 20px;
+
+        @media (max-width: 1200px) {
+            display: block;
+            margin: 0 auto;
+            float: none;
+            margin-top: 20px;
+            width: 217px;
+        }
+
+        a {
+            .fab {
+                margin: 3px;
+                border: 1px solid $lime;
+                color: $lime;
+                width: 30px;
+                height: 30px;
+                float: right;
+
+
+                &::before {
+                    position: relative;
+                    display: block;
+                    margin: 0 auto;
+                    width: 14px;
+                    top: 9px;
+                    left: 1px;
+
+
+                }
+
+            }
+
+            .fa-spin-hover:hover {
+                -webkit-animation: fa-spin .3s infinite linear;
+                -moz-animation: fa-spin .3s infinite linear;
+                -o-animation: fa-spin .3s infinite linear;
+                animation: fa-spin .3s infinite linear;
+                animation-iteration-count: 1;
+                transition: all .3s ease-in-out;
+                color: $white;
+                border: 1px solid $white;
+            }
+        }
+    }
+
+    p.text-white {
+        @media (max-width: 1200px) {
+            display: block;
+            margin: 0 auto;
+            float: none;
+            margin: 20px;
+            text-align: center;
+        }
+    }
+
+    button.btn-1 {
+        border: 0;
+    }
+
+    input.form-control {
+        border-radius: 0;
+        border: 0;
+    }
+}
+
+section.techcircus {
+    position: relative;
+    overflow: hidden;
+
+
+
+    .legal-statement {
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        display: block;
+        height: 177px;
+        padding-top: 12px;
+        margin-top: 50px;
+    }
+
+    .legal-statement p {
+        color: white;
+        float: right;
+        width: 70%;
+
+    }
+
+    .legal-statement p a {
+        color: $lime;
+        text-decoration: none;
+    }
+
+    .legal-statement a {
+        width: 30%;
+    }
+
+    .legal-statement a img {
+        max-width: 300px;
+        width: 100%;
+        float: left;
+        margin: 55px 0 0 0;
+    }
+
+    .footer-copyright {
+        clear: both;
+    }
+
+    @media (max-width: 1250px) {
+        .legal-statement {
+            height: auto;
+        }
+
+        .legal-statement p {
+            float: none;
+            width: 100%;
+            text-align: center;
+            max-width: none;
+        }
+
+        .legal-statement a img {
+            float: none;
+            margin: 30px auto;
+            display: block;
+
+        }
+
+        .legal-statement a {
+            float: none;
+            margin: 0 auto;
+            display: block;
+            width: 80%;
+
+        }
+
+        .legal-statement p a {
+            float: none;
+            margin: 0 auto;
+            display: inline;
+
+        }
+    }
+}
