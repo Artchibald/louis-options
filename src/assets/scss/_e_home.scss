@@ -6,23 +6,120 @@ section.bgimage {
     background-position: center bottom;
     background-size: cover;
 
-    .logo-container {
-        background: url(../images/logo-green.svg);
-        background-size: 100% auto;
-        background-repeat: no-repeat;
-        background-position: center;
-        max-width: 500px;
-        width: 100%;
-        height: 100px;
+
+
+    .logo-img-2 {
+        width: 240px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 26px;
+        letter-spacing: 25px;
         position: relative;
+        left: 9px;
+        top: -23px;
     }
 
     h1 {
-        font-size: 5vw;
-        letter-spacing: 1px;
+        font-family: 'Abel', sans-serif;
+        font-size: 26px;
+    }
 
-        @include media-breakpoint-down(sm) {
-            font-size: 21px;
+    .default-triangle {
+        width: 30px;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .triangle-0-container {
+        top: -59px;
+        left: -49px;
+        animation: fadeInFromNone 5s ease-out infinite;
+        animation-delay: 0s;
+    }
+
+    .triangle-1-container {
+        top: 22px;
+        left: -15px;
+        transform: rotate(90deg);
+        animation: fadeInFromNone 5s ease-out infinite;
+        animation-delay: 1s;
+    }
+
+    .triangle-2-container {
+        top: 43px;
+        left: -15px;
+        transform: rotate(90deg);
+        animation: fadeInFromNone 5s ease-out infinite;
+        animation-delay: 2s;
+
+    }
+
+    .triangle-3-container {
+        top: 64px;
+        left: -15px;
+        transform: rotate(90deg);
+        animation: fadeInFromNone 5s ease-out infinite;
+        animation-delay: 3s;
+    }
+
+    .triangle-4-container {
+        top: 81px;
+        left: -15px;
+        transform: rotate(90deg);
+        animation: fadeInFromNone 5s ease-out infinite;
+        animation-delay: 4s;
+    }
+
+    .triangle-5-container {
+        top: 110px;
+        left: -15px;
+        transform: rotate(90deg);
+        animation: fadeInFromNone 5s ease-out infinite;
+        animation-delay: 5s;
+    }
+
+    .triangle-6-container {
+        top: -81px;
+        left: -73px;
+        transform: rotate(90deg);
+        animation: fadeInFromNone 5s ease-out infinite;
+        animation-delay: 2s;
+    }
+
+    .triangle-7-container {
+        top: -111px;
+        left: 41px;
+        transform: rotate(90deg);
+        animation: fadeInFromNone 5s ease-out infinite;
+        animation-delay: 2s;
+    }
+
+    /*aninmate triangles*/
+
+    // .triangle-7-container .img-fluid {
+    //     display: block;
+    //     animation: fadeInFromNone 5s ease-out infinite;
+    //     animation-delay: .8s;
+    // }
+
+    @-webkit-keyframes fadeInFromNone {
+        0% {
+            display: none;
+            opacity: 0;
+        }
+
+        1% {
+            display: block;
+            opacity: 0;
+        }
+
+        100% {
+            display: block;
+            opacity: 1;
         }
     }
 
@@ -57,9 +154,24 @@ section.bgimage {
     }
 }
 
-section.speakers {
+section.mixes {
     position: relative;
     overflow: hidden;
+
+    .soundcloud-button {
+        border: 1px solid #fff;
+        font-size: 56px;
+
+        &:hover {
+            background-color: #fff;
+            color: #000 !important;
+        }
+
+        @include media-breakpoint-down(md) {
+            font-size: 36px;
+        }
+
+    }
 
     #speakers {
         position: absolute;
@@ -92,7 +204,7 @@ section.countdown {
         color: #5b5858;
         text-shadow: 0 0 3px #4c4949, 0 0 5px #4c4949;
         opacity: .3;
-        font-family: 'kollektifbold';
+        font-family: 'Abel';
         user-select: none;
         -webkit-user-select: none;
         -khtml-user-select: none;
@@ -103,17 +215,17 @@ section.countdown {
 
 
     h2 {
-        font-family: 'kollektifbold';
+        font-family: 'Abel';
         z-index: 5;
         position: relative;
         letter-spacing: 1px;
         text-align: left;
-        font-size: 36px;
+        font-size: 54px;
         line-height: 32px;
 
         span {
-            color: $lime;
-
+            font-size: 54px;
+            color: white;
         }
     }
 
@@ -124,11 +236,11 @@ section.countdown {
     }
 
     h3 {
-        font-family: 'kollektifbold';
+        font-family: 'Abel';
         font-size: 24px;
 
         span {
-            color: $lime;
+            color: white;
         }
 
     }
@@ -136,24 +248,6 @@ section.countdown {
     p.max-width-p {
         max-width: 270px;
     }
-}
-
-.fa-stopwatch {
-    font-size: 90px !important;
-    color: #bed12a !important;
-    position: absolute !important;
-    top: -11px !important;
-    left: 120px !important;
-    display: block !important;
-}
-
-.fa-ticket-alt {
-    font-size: 90px !important;
-    color: #bed12a !important;
-    position: absolute !important;
-    top: 26px !important;
-    left: 140px !important;
-    display: block !important;
 }
 
 section.about {
@@ -167,7 +261,7 @@ section.about {
     }
 
     h2 {
-        font-family: kollektifbold;
+        font-family: Abel;
         z-index: 5;
         position: relative;
         letter-spacing: 1px;
@@ -270,7 +364,7 @@ section.gallery {
 
             h3 {
                 text-align: left;
-                font-family: 'kollektifbold', Arial;
+                font-family: 'Abel', Arial;
                 font-size: 21px;
                 letter-spacing: 3px;
                 text-transform: uppercase;
@@ -356,7 +450,7 @@ section.testimonials {
         color: #5b5858;
         text-shadow: 0 0 3px #4c4949, 0 0 5px #4c4949;
         opacity: .3;
-        font-family: 'kollektifbold';
+        font-family: 'Abel';
         user-select: none;
         -webkit-user-select: none;
         -khtml-user-select: none;

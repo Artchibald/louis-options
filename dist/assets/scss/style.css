@@ -11743,48 +11743,6 @@ html {
     transform: scale(1); } }
 
 /* Fonts */
-@font-face {
-  font-family: 'kollektifbold';
-  src: url("../fonts/kollektif-bold-webfont.woff2") format("woff2"), url("../fonts/kollektif-bold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'kollektifbold_italic';
-  src: url("../fonts/kollektif-bolditalic-webfont.woff2") format("woff2"), url("../fonts/kollektif-bolditalic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'kollektifitalic';
-  src: url("../fonts/kollektif-italic-webfont.woff2") format("woff2"), url("../fonts/kollektif-italic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'kollektifregular';
-  src: url("../fonts/kollektif-webfont.woff2") format("woff2"), url("../fonts/kollektif-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'montserratbold';
-  src: url("../fonts/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/montserrat-bold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'montserratlight';
-  src: url("../fonts/montserrat-light-webfont.woff2") format("woff2"), url("../fonts/montserrat-light-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'montserratmedium';
-  src: url("../fonts/montserrat-medium-webfont.woff2") format("woff2"), url("../fonts/montserrat-medium-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
 a {
   color: #bed12a;
   border: 0; }
@@ -11793,13 +11751,13 @@ a {
     color: #bed12a; }
 
 h1 {
-  font-family: 'kollektifregular'; }
+  font-family: 'Abel'; }
 
 h2 {
-  font-family: 'kollektifregular'; }
+  font-family: 'Abel'; }
 
 h2.dark {
-  font-family: 'kollektifbold';
+  font-family: 'Abel';
   font-size: 56px;
   color: #fff;
   min-width: 100%; }
@@ -11810,7 +11768,7 @@ h2.dark {
     color: #bed12a; }
 
 h2.dark {
-  font-family: 'kollektifbold';
+  font-family: 'Abel';
   font-size: 56px;
   color: #171515;
   min-width: 100%; }
@@ -11825,13 +11783,13 @@ h2.sub-title {
   letter-spacing: 1px; }
 
 h3 {
-  font-family: 'kollektifbold'; }
+  font-family: 'Abel'; }
 
 h4 {
   font-family: 'montserratlight'; }
 
 h5 {
-  font-family: 'kollektifregular'; }
+  font-family: 'Abel'; }
 
 p {
   font-family: 'montserratlight'; }
@@ -11840,13 +11798,13 @@ p.max-width-center {
   max-width: 600px; }
 
 body {
-  font-family: 'kollektifregular'; }
+  font-family: 'Abel'; }
 
 .bold {
-  font-family: 'kollektifbold'; }
+  font-family: 'Abel'; }
 
 .italic {
-  font-family: 'kollektifitalic'; }
+  font-family: 'Abel'; }
 
 .text-light-grey {
   color: #565656; }
@@ -11879,15 +11837,14 @@ a {
     text-decoration: none; }
 
 .btn-1 {
-  background: #bed12a;
+  background: none;
   color: #fff;
   transition: 0.3s ease-in-out;
   border: 0;
-  border-radius: 5px; }
+  border-radius: 5px;
+  text-decoration: none; }
   .btn-1:hover {
-    background-color: #fff;
-    color: #bed12a;
-    text-decoration: none; }
+    opacity: 0.5; }
 
 .btn-2 {
   background: #bed12a;
@@ -11918,14 +11875,13 @@ header.header {
       transition: all .2s linear;
       transform-origin: 0 100%;
       transform: scale(1.02); }
-    header.header a.logo-link .logo-container svg {
-      width: 240px;
-      height: 50px;
+    header.header a.logo-link .logo-container .logo-img {
+      width: 120px;
       position: relative;
       /* margin-top: 3px; */
       margin: 10px 0px;
       position: relative;
-      top: 6px;
+      top: 0px;
       left: -8px; }
   header.header .navbar .btn-1 {
     position: absolute;
@@ -11974,8 +11930,7 @@ header.header {
     border-radius: 3px; }
     header.header .navbar-dark .navbar-nav .nav-link:hover,
     header.header .navbar-dark .navbar-nav .nav-link:hover {
-      background-color: #bed12a;
-      color: #fff; }
+      opacity: 0.5; }
   header.header .navbar-dark .navbar-nav .nav-link.btn-1 {
     color: #fff; }
     header.header .navbar-dark .navbar-nav .nav-link.btn-1:hover {
@@ -12007,22 +11962,84 @@ section.bgimage {
   background: url(../images/home/hero-bg-event-tech-circus.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: cover; }
-  section.bgimage .logo-container {
-    background: url(../images/logo-green.svg);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 500px;
-    width: 100%;
-    height: 100px;
-    position: relative; }
+  background-size: cover;
+  /*aninmate triangles*/ }
+  section.bgimage .logo-img-2 {
+    width: 240px;
+    display: block;
+    margin: 0 auto; }
+  section.bgimage h2 {
+    font-size: 26px;
+    letter-spacing: 25px;
+    position: relative;
+    left: 9px;
+    top: -23px; }
   section.bgimage h1 {
-    font-size: 5vw;
-    letter-spacing: 1px; }
-    @media (max-width: 767.98px) {
-      section.bgimage h1 {
-        font-size: 21px; } }
+    font-family: 'Abel', sans-serif;
+    font-size: 26px; }
+  section.bgimage .default-triangle {
+    width: 30px;
+    display: block;
+    margin: 0 auto;
+    position: relative; }
+  section.bgimage .triangle-0-container {
+    top: -59px;
+    left: -49px;
+    animation: fadeInFromNone 5s ease-out infinite;
+    animation-delay: 0s; }
+  section.bgimage .triangle-1-container {
+    top: 22px;
+    left: -15px;
+    transform: rotate(90deg);
+    animation: fadeInFromNone 5s ease-out infinite;
+    animation-delay: 1s; }
+  section.bgimage .triangle-2-container {
+    top: 43px;
+    left: -15px;
+    transform: rotate(90deg);
+    animation: fadeInFromNone 5s ease-out infinite;
+    animation-delay: 2s; }
+  section.bgimage .triangle-3-container {
+    top: 64px;
+    left: -15px;
+    transform: rotate(90deg);
+    animation: fadeInFromNone 5s ease-out infinite;
+    animation-delay: 3s; }
+  section.bgimage .triangle-4-container {
+    top: 81px;
+    left: -15px;
+    transform: rotate(90deg);
+    animation: fadeInFromNone 5s ease-out infinite;
+    animation-delay: 4s; }
+  section.bgimage .triangle-5-container {
+    top: 110px;
+    left: -15px;
+    transform: rotate(90deg);
+    animation: fadeInFromNone 5s ease-out infinite;
+    animation-delay: 5s; }
+  section.bgimage .triangle-6-container {
+    top: -81px;
+    left: -73px;
+    transform: rotate(90deg);
+    animation: fadeInFromNone 5s ease-out infinite;
+    animation-delay: 2s; }
+  section.bgimage .triangle-7-container {
+    top: -111px;
+    left: 41px;
+    transform: rotate(90deg);
+    animation: fadeInFromNone 5s ease-out infinite;
+    animation-delay: 2s; }
+
+@-webkit-keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0; }
+  1% {
+    display: block;
+    opacity: 0; }
+  100% {
+    display: block;
+    opacity: 1; } }
   @media (max-width: 820px) {
     section.bgimage a.btn-1 {
       font-size: 12px; } }
@@ -12041,15 +12058,24 @@ section.bgimage {
     margin: 10px;
     padding: 10px; }
 
-section.speakers {
+section.mixes {
   position: relative;
   overflow: hidden; }
-  section.speakers #speakers {
+  section.mixes .soundcloud-button {
+    border: 1px solid #fff;
+    font-size: 56px; }
+    section.mixes .soundcloud-button:hover {
+      background-color: #fff;
+      color: #000 !important; }
+    @media (max-width: 991.98px) {
+      section.mixes .soundcloud-button {
+        font-size: 36px; } }
+  section.mixes #speakers {
     position: absolute;
     top: -5%;
     width: 1px;
     height: 1px; }
-  section.speakers .col-12.col-sm-12.col-md-12.col-lg-12 .btn-1.btn-primary.p-3.mt-5.mb-1.ml-auto.mr-auto {
+  section.mixes .col-12.col-sm-12.col-md-12.col-lg-12 .btn-1.btn-primary.p-3.mt-5.mb-1.ml-auto.mr-auto {
     display: block;
     width: 157px;
     text-align: center; }
@@ -12069,47 +12095,32 @@ section.countdown {
     color: #5b5858;
     text-shadow: 0 0 3px #4c4949, 0 0 5px #4c4949;
     opacity: .3;
-    font-family: 'kollektifbold';
+    font-family: 'Abel';
     user-select: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none; }
   section.countdown h2 {
-    font-family: 'kollektifbold';
+    font-family: 'Abel';
     z-index: 5;
     position: relative;
     letter-spacing: 1px;
     text-align: left;
-    font-size: 36px;
+    font-size: 54px;
     line-height: 32px; }
     section.countdown h2 span {
-      color: #bed12a; }
+      font-size: 54px;
+      color: white; }
   section.countdown p#countdownP {
     font-size: 16px; }
   section.countdown h3 {
-    font-family: 'kollektifbold';
+    font-family: 'Abel';
     font-size: 24px; }
     section.countdown h3 span {
-      color: #bed12a; }
+      color: white; }
   section.countdown p.max-width-p {
     max-width: 270px; }
-
-.fa-stopwatch {
-  font-size: 90px !important;
-  color: #bed12a !important;
-  position: absolute !important;
-  top: -11px !important;
-  left: 120px !important;
-  display: block !important; }
-
-.fa-ticket-alt {
-  font-size: 90px !important;
-  color: #bed12a !important;
-  position: absolute !important;
-  top: 26px !important;
-  left: 140px !important;
-  display: block !important; }
 
 section.about {
   position: relative; }
@@ -12119,7 +12130,7 @@ section.about {
     width: 1px;
     height: 1px; }
   section.about h2 {
-    font-family: kollektifbold;
+    font-family: Abel;
     z-index: 5;
     position: relative;
     letter-spacing: 1px;
@@ -12181,7 +12192,7 @@ section.gallery {
         font-family: 'montserratlight', Arial; }
       section.gallery figure figcaption h3 {
         text-align: left;
-        font-family: 'kollektifbold', Arial;
+        font-family: 'Abel', Arial;
         font-size: 21px;
         letter-spacing: 3px;
         text-transform: uppercase;
@@ -12237,7 +12248,7 @@ section.testimonials {
     color: #5b5858;
     text-shadow: 0 0 3px #4c4949, 0 0 5px #4c4949;
     opacity: .3;
-    font-family: 'kollektifbold';
+    font-family: 'Abel';
     user-select: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -12597,7 +12608,7 @@ section.countdown {
     color: #5b5858;
     text-shadow: 0 0 3px #4c4949, 0 0 5px #4c4949;
     opacity: .3;
-    font-family: 'kollektifbold';
+    font-family: 'Abel';
     user-select: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -12618,7 +12629,7 @@ section.countdown {
     left: 140px;
     display: block; }
   section.countdown h2 {
-    font-family: 'kollektifbold';
+    font-family: 'Abel';
     z-index: 5;
     position: relative;
     letter-spacing: 1px;
@@ -12626,11 +12637,11 @@ section.countdown {
     section.countdown h2 span {
       color: #bed12a; }
   section.countdown p.white-bg {
-    font-family: 'kollektifbold';
+    font-family: 'Abel';
     font-size: 18px;
     text-transform: uppercase; }
   section.countdown h3 {
-    font-family: 'kollektifbold';
+    font-family: 'Abel';
     font-size: 24px; }
     section.countdown h3 span {
       color: #bed12a; }

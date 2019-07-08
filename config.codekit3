@@ -50,14 +50,6 @@
 		"oAP": "/dist/index.html",
 		"oF": 0
 		},
-	"/magic-scroll-and-debug-working.zip": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/magic-scroll-and-debug-working.zip",
-		"oF": 0
-		},
 	"/node_modules": {
 		"ft": 65536,
 		"oA": 2,
@@ -1876,6 +1868,39 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/src/assets/images/home/logo-louis-options.png": {
+		"ft": 32768,
+		"iS": 11043,
+		"oA": 0,
+		"oAP": "/dist/assets/images/home/logo-louis-options.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/images/home/louis-options-logo-2.png": {
+		"ft": 32768,
+		"iS": 8196,
+		"oA": 0,
+		"oAP": "/dist/assets/images/home/louis-options-logo-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/images/home/missing-close.jpg": {
+		"ft": 16384,
+		"iS": 517025,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/dist/assets/images/home/missing-close.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/src/assets/images/home/portrait-example.jpg": {
 		"ft": 16384,
 		"iS": 26757,
@@ -1896,6 +1921,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/images/home/Screen-Shot-2019-06-09-at-15.35.22.jpg": {
+		"ft": 16384,
+		"iS": 517025,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/dist/assets/images/home/Screen-Shot-2019-06-09-at-15.35.22.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/src/assets/images/home/speaker-slide-1.jpg": {
@@ -1951,6 +1987,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/images/home/triangle.png": {
+		"ft": 32768,
+		"iS": 1738,
+		"oA": 0,
+		"oAP": "/dist/assets/images/home/triangle.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
 		"q": 100
 		},
 	"/src/assets/images/home/Untitled-2.png": {
@@ -2214,38 +2261,6 @@
 		"oAP": "/dist/index.html",
 		"oF": 0
 		},
-	"/src/see-you.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/dist/see-you.html",
-		"oF": 0
-		},
-	"/src/sponsors.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/sponsors.html",
-		"oF": 0
-		},
-	"/src/tickets.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/tickets.html",
-		"oF": 0
-		},
-	"/src/venue.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/venue.html",
-		"oF": 0
-		},
 	"/webpack.config.js": {
 		"bF": 0,
 		"ft": 64,
@@ -2264,7 +2279,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 576600889.84799004,
-	"displayValue": "static-frontend-website",
+	"displayValue": "louis-options",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-obama",
 	"iconImageWasSetByUser": 0

@@ -23,14 +23,13 @@
                 transform: scale(1.02);
             }
 
-            .logo-container svg {
-                width: 240px;
-                height: 50px;
+            .logo-container .logo-img {
+                width: 120px;
                 position: relative;
                 /* margin-top: 3px; */
                 margin: 10px 0px;
                 position: relative;
-                top: 6px;
+                top: 0px;
                 left: -8px;
 
 
@@ -117,8 +116,9 @@
             border-radius: 3px;
 
             &:hover {
-                background-color: $lime;
-                color: $white;
+                // background-color: $lime;
+                // color: $white;
+                opacity: 0.5;
             }
         }
 

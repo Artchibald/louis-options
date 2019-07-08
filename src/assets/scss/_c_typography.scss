@@ -1,67 +1,5 @@
 /* Fonts */
 
-@font-face {
-    font-family: 'kollektifbold';
-    src: url('../fonts/kollektif-bold-webfont.woff2') format('woff2'),
-        url('../fonts/kollektif-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'kollektifbold_italic';
-    src: url('../fonts/kollektif-bolditalic-webfont.woff2') format('woff2'),
-        url('../fonts/kollektif-bolditalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'kollektifitalic';
-    src: url('../fonts/kollektif-italic-webfont.woff2') format('woff2'),
-        url('../fonts/kollektif-italic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'kollektifregular';
-    src: url('../fonts/kollektif-webfont.woff2') format('woff2'),
-        url('../fonts/kollektif-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'montserratbold';
-    src: url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
-        url('../fonts/montserrat-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'montserratlight';
-    src: url('../fonts/montserrat-light-webfont.woff2') format('woff2'),
-        url('../fonts/montserrat-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'montserratmedium';
-    src: url('../fonts/montserrat-medium-webfont.woff2') format('woff2'),
-        url('../fonts/montserrat-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 a {
     color: $lime;
@@ -74,15 +12,15 @@ a {
 }
 
 h1 {
-    font-family: 'kollektifregular';
+    font-family: 'Abel';
 }
 
 h2 {
-    font-family: 'kollektifregular';
+    font-family: 'Abel';
 }
 
 h2.dark {
-    font-family: 'kollektifbold';
+    font-family: 'Abel';
     font-size: 56px;
     color: $white;
     min-width: 100%;
@@ -98,7 +36,7 @@ h2.dark {
 }
 
 h2.dark {
-    font-family: 'kollektifbold';
+    font-family: 'Abel';
     font-size: 56px;
     color: $dark;
     min-width: 100%;
@@ -118,7 +56,7 @@ h2.sub-title {
 }
 
 h3 {
-    font-family: 'kollektifbold';
+    font-family: 'Abel';
 }
 
 h4 {
@@ -126,7 +64,7 @@ h4 {
 }
 
 h5 {
-    font-family: 'kollektifregular';
+    font-family: 'Abel';
 }
 
 p {
@@ -139,15 +77,15 @@ p.max-width-center {
 }
 
 body {
-    font-family: 'kollektifregular';
+    font-family: 'Abel';
 }
 
 .bold {
-    font-family: 'kollektifbold';
+    font-family: 'Abel';
 }
 
 .italic {
-    font-family: 'kollektifitalic';
+    font-family: 'Abel';
 }
 
 .text-light-grey {
@@ -183,16 +121,15 @@ a {
 
 
 .btn-1 {
-    background: $lime;
+    background: none;
     color: $white;
     transition: 0.3s ease-in-out;
     border: 0;
     border-radius: 5px;
+    text-decoration: none;
 
     &:hover {
-        background-color: $white;
-        color: $lime;
-        text-decoration: none;
+        opacity: 0.5;
     }
 }
 
