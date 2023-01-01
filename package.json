@@ -16,8 +16,8 @@
         "gulp-rename": "^1.4.0",
         "gulp-sass": "^4.0.2",
         "plumber": "^0.4.8",
-        "webpack": "^4.29.6",
-        "webpack-stream": "^5.2.1"
+        "webpack": "^5.75.0",
+        "webpack-stream": "^7.0.0"
     },
     "scripts": {
         "build": "webpack --config prod.config.js"
